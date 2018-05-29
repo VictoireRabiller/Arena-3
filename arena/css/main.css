@@ -1,9 +1,11 @@
 html{
 	font-size: 62.5%;
+	background-color: grey;
+
 }
 
 body{
-	color : black;
+	color : white;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.8;
 	font-size: 1.6rem;
@@ -57,7 +59,7 @@ header nav ul li a{
 	display: inline-block;
 	font-size: 2rem;
 	text-decoration: none;
-	color : black;
+	color : white;
 	padding: 1rem;
 	font-weight: bold;
 	margin-bottom: 100px;
@@ -114,6 +116,7 @@ td{
 
 .selected a{
 	background-color: white;
+	color : black;
 }
 
 .perso{

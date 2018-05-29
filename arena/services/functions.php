@@ -5,7 +5,12 @@ define('PERSO_FILE_NAME', '../database/perso.csv');
 function getDb (){
 	$user = 'root';
 	$password = 'troiswa';
-	$db =new PDO('mysql:host=localhost;dbname=arena', $user, $password);
+	$db =new PDO(
+		'mysql:host=localhost;dbname=arena', 
+		$user, 
+		$password,
+		array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING)
+		);
 	$db->exec('SET NAMES UTF8');
 	return $db;
 }
@@ -75,3 +80,6 @@ function removeperso($id) {
 	// fclose($handle);
 
 // }
+
+
+
